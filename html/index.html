@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/calculator.css">
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <!-- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="section_hist" id="section_hist">
+      <div class="history_details" id="history_details">
+        <div class="history_details_con">
+          <li class="all_li"><label for="" class="history_items" id="hi_a"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_b"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_c"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_d"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_e"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_f"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_g"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_h"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_i"></label></li>
+          <li class="all_li"><label for="" class="history_items" id="hi_j"></label></li>
+        </div>
+        <button class="history_clr_btn" id="history_clr_btn">Clear</button>
+      </div>
+    </div>
+    <div class="history_empty" id="history_empty"></div>
+    <div class="section_calc">
+      <div class="top_container">
+        <div class="top_btns_group">
+          <button class="history_btn" id="history_btn">History</button>
+        </div>
+        <div class="result_container">
+          <label for="" class="result_label" id="result_label"></label>
+        </div>
+      </div>
+      <div class="bottom_container">
+        <div class="left_container">
+          <!-- row a -->
+          <div class="left_row">
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_7">7</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_8">8</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_9">9</button>
+            </div>
+          </div>
+          <!-- row b -->
+          <div class="left_row">
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_4">4</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_5">5</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_6">6</button>
+            </div>
+          </div>
+          <!-- row c -->
+          <div class="left_row">
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_1">1</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_2">2</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_3">3</button>
+            </div>
+          </div>
+          <!-- row d -->
+          <div class="left_row">
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_dot">.</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_0">0</button>
+            </div>
+            <div class="left_row_item">
+              <button class="left_btns" id="btn_equal">=</button>
+            </div>
+          </div>
+        </div>
+        <div class="right_container">
+          <div class="right_row_item">
+            <button class="right_btns" id="btn_del">DEL</button>
+          </div>
+          <div class="right_row_item">
+            <button class="right_btns" id="btn_divid">/</button>
+          </div>
+          <div class="right_row_item">
+            <button class="right_btns" id="btn_multi">x</button>
+          </div>
+          <div class="right_row_item">
+            <button class="right_btns" id="btn_substr">-</button>
+          </div>
+          <div class="right_row_item">
+            <button class="right_btns" id="btn_additi">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+  </body>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        window.$ = window.jQuery = require('jquery')
+    </script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../resources/js/calculator.js"></script>
+</html>
